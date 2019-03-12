@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图片缓冲运动</title>
+<style>
+*{
+	margin:0;
+}
+#div1{
+	background : red;
+	width : 200px;
+	height : 200px; 
+	position : relative;
+	left : -200px;
+	top : 0px;
+	}
+#div1 span{
+	width:20px;
+	height:50px;
+	background:blue;
+	position:absolute;
+	left:200px;
+	top:75px;
+}
+</style>
+<script>
+	window.onload=function(){
+		var getDiv = document.getElementById("div1");
+		getDiv.onmouseover = function(){
+			startMove(0);
+		}
+		getDiv.onmouseout = function(){
+			startMove(-200);
+		}
+}
+var timer=null;
+function startMove(target){
+		clearInterval(timer);
+		var getDiv = document.getElementById("div1");
+		timer = setInterval(function(){
+			var speed = (target-getDiv.offsetLeft)/10;
+			speed = speed>0?Math.ceil(speed):Math.floor(speed);
+			if(getDiv.offsetLeft==target){
+				clearInterval(timer);
+			}else{
+				getDiv.style.left = getDiv.offsetLeft+speed+'px';
+			}
+		},30);
+	}
+</script>
+</head>
+<body>
+	<div id="div1">
+		<span>div</span>
+	</div>
+</body>
+</html>

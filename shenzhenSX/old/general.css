@@ -1,0 +1,64 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: "Microsoft YaHei" ! important;
+}
+body{
+	width:100%;
+	height:100%;
+}
+.head{
+	width:100%;
+	margin:0 auto;
+	background: #fff;
+}
+.headPic{
+	clear: both;
+	display: block;
+	margin: auto;
+}
+
+.menu{
+	width:100%;
+	height:40px;
+	background:url("/Users/taohuadao/Documents/shangxin/menubgi.png") repeat-x;
+}
+.menulist{
+	width:1000px;
+	height:40px;
+	margin:0 auto;
+}
+.current{
+	width:110px;
+	height:40px;
+	display: block;
+	/*文字位置*/
+	line-height:40px;
+	float:left;
+	text-align: center;
+	background:url("/Users/taohuadao/Documents/shangxin/menubgi2.png");
+}
+.currentButn{
+	/*文字样式*/
+	color: #fff;
+	text-decoration: none;
+	font-weight:bold;
+}
+.notcurrent:hover{
+	background:url("/Users/taohuadao/Documents/shangxin/menubgi2.png") repeat-x;
+}
+.notcurrent{
+	width:110px;
+	height:40px;
+	line-height:40px;
+	text-align: center;
+	float:left;
+	display:block;
+}
+
+.foot{
+	text-align: center;
+	font-size:12px;
+	line-height:20px;
+	margin-bottom: 30px;
+}

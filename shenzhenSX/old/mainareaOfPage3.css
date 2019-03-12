@@ -1,0 +1,153 @@
+.mainarea{
+	width:1000px;
+	height:auto;
+	margin:0 auto;
+}
+.mainleft{
+	width:199px;
+	height:auto;
+	float:left;
+	background: #f8faff;
+	border-left:1px solid #eee;
+	border-bottom:1px solid #eee;
+}
+.mainright{
+	width:798px;
+	height:auto;
+	float:left;
+	border-left:1px solid #eee;
+	border-right:1px solid #eee;
+	border-bottom:1px solid #eee;
+	margin:0px 0px 40px 0px;
+}
+.shangbiao{
+	width:199px;
+	height:auto;
+}
+.shangbiaolist{
+	list-style:none;
+	height:250px;
+	display:block;
+	overflow:scroll;
+}
+
+.left{
+	display:inline-block;
+	float:left;
+	width:56px;
+	height:20px;
+	margin:15px 10px 10px 20px;
+	font-size:14px;
+	color: #555;
+}
+.right{
+	display:inline-block;
+	float: left;
+	width:56px;
+	height:20px;
+	margin:18px 0px 10px 0px;
+	font-size:12px;
+	color:#ccc;
+}
+.listitem{
+	margin: 0px 0px 0px 20px;
+	overflow:scroll;
+	
+}
+.articleTitle,.articleTitle1{
+    display: block;
+    width:149px;
+    padding:10px 0 10px 0;
+    border-bottom: 1px dotted #ccc;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	text-decoration: none;
+    font-size:12px;
+}
+.articleTitle1{
+	color:red;
+}
+.articleTitle{
+	color:#777;
+}
+.articleTitle:hover{
+	color:red;
+}
+/**/
+.connection{
+	width:200px;
+	height:auto;
+	background: #f8faff;
+ 	float:left;   
+}
+.address{
+	font-size:12px;
+	color:#777;
+	height:100px;
+	line-height:25px;
+	margin: 0px 0px 0px 20px;
+}
+.contact{
+	margin: 10px 0px 15px 0px;
+}
+.contactphra{
+	font-size:12px;
+	color:#777;
+	line-height:30px;
+	margin: 0px 0px 0px 20px;
+}
+.consultl{
+	margin: 0px 10px 0px 20px;
+	display: inline-block;
+}
+.maintitle{
+	margin:0px 0px 0px 20px ;
+	width:750px;
+	height:60px;
+	border-bottom:1px solid #eee;
+}
+.titletop{
+	margin:25px 0px 0px 0px;
+	font-size:18px;
+}
+.createtime{
+	margin:10px 0px 0px 0px;
+	font-size:12px;
+	color:#ccc;
+	float:left;
+}
+.modifytime{
+	margin:10px 0px 0px 20px;
+	font-size:12px;
+	color:#ccc;
+	float:left;
+}
+.maintext{
+	margin:15px 0px 100px 40px ;
+	width:750px;
+	height:auto;
+	line-height:22px;
+}
+.texttitle{
+	font-size:14px;
+	color:blue;
+}
+.text{
+	font-size:14px;
+	color:#777;
+}
+.registerPic{
+	margin:0px 0px 20px 0px;
+}
+/*标题*/
+.fix{
+	position:fixed;
+	top:0;
+	z-index:100;
+}
+.fix1{
+	position:fixed;
+	top:41px;
+	z-index:100;
+}

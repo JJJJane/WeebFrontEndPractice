@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>个人中心</title>
+</head>
+<style>
+* {
+  margin: 0;
+  padding: 0; }
+body {
+	height:100%;
+  font: 3.6vw/1.5 tahoma,arial,sans-serif; }
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table; }
+.clearfix:after {
+  clear: both;
+  background:#F3F7F9; }
+  
+  .first{height:20vw;position:relative;}
+  #card{position:absolute;height:14vw;top:7vw;left:5vw;}
+  #topright{position:absolute;height:5vw;left:90vw;top:10vw;}
+  .right{position:absolute;height:5vw;left:90vw;top:7vw;}
+  #name{position:absolute;left:22vw;top:6vw;font-size:7vw;color:#FF0;}
+  #student{
+	  position:absolute;
+	  font-size:3vw;
+	  color:#FF0;
+	  border-width:0.1vw;
+	  border-style:solid;
+	  border-radius:2vw;
+	  border-color:＃F0;
+	  left:44vw;
+	  top:10vw;
+	  padding-left:1vw;
+	  padding-right:1vw;}
+  #add{
+		  position:absolute;
+		  font-size:3vw;
+		  left:22vw;
+		  top:15vw;
+		  }
+	.spy,.feedback,.help{
+		height:15vw;
+		position:relative;
+		}	  
+	.head{
+		position:absolute;
+		height:5vw;
+		left:4vw;
+		top:7vw;}
+	#left{
+		position:absolute;
+		top:6vw;
+		left:12vw;
+		font-size:5vw;
+	}
+	.bottom1{
+		position:fixed;
+		bottom:6vw;
+		width:100vw;
+		height:10vw;
+		background:#FFF;
+		}
+		#center,#platform,#personal{
+			height:5vw;}
+		#center{
+			margin-top:1vw;
+			margin-left:6vw;}
+			#platform{
+				margin-top:1vw;
+				margin-left:36vw;}
+				#personal{
+					margin-top:1vw;
+					margin-left:34vw;}
+					.bottom2{position:fixed;
+		bottom:0vw;
+		width:100vw;
+		height:8vw;
+		margin-top:0vw;
+		background:#FFF;
+		}
+		#zhaokao{margin-left:2vw;}
+		#xuexi{margin-left:26vw;}
+		#geren{margin-left:29vw;}
+		.middle{background:#EFF3F5;
+		display:inline-block;
+		width:100vw;
+		height:2vw;
+		font-size:0vw;}
+		.down{
+			width:100vw;
+			height:70vw;
+			font-size:0vw;
+			background:#EFF3F5;}
+	
+  </style>
+
+<body>
+<!--第一行-->
+<div class="first">
+ <img src="名片.png" id="card">
+<span id="name">劳嘉信</span>
+<span id="student">学生</span>
+<span id="add">华南理工大学大学城校区</span>
+<img src="箭头 右.png" id="topright">
+</div>
+<!--缝隙-->
+<div class="middle">s</div>
+<!--第二行-->
+<div class="spy">
+<img src="头像.png" class="head">
+<span id="left">监考记录</span>
+<img src="箭头 右.png" class="right">
+</div>
+<!--缝隙-->
+<div class="middle">s</div>
+<!--第三行-->
+<div class="feedback">
+<img src="对话框4.png" class="head">
+<span id="left">意见反馈</span>
+<img src="箭头 右.png" class="right">
+</div>
+<!--缝隙-->
+<div class="middle">s</div>
+<!--第四行-->
+<div class="help">
+<img src="问号.png" class="head">
+<span id="left">帮助</span>
+<img src="箭头 右.png" class="right">
+</div>
+<div class="down">s</div>
+<div class="bottom1">
+<!--招考-->
+<img src="房子.png" id="center">
+<!--学习-->
+<img src="书.png" id="platform">
+<!--个人-->
+<img src="头像 (1).png" id="personal">
+</div>
+<div class="bottom2">
+<span id="zhaokao">招考中心</span>
+<span id="xuexi">学习平台</span>
+<span id="geren">个人</span
+></div></body>
+</html>

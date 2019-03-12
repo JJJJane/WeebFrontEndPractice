@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>边栏滚动</title>
+	<style>
+		body{
+			margin:0;
+			padding:0;
+		}
+		.left{
+			top:0;
+			left:0;
+			width:700px;
+			height:4000px;
+			background: black;
+		}
+		.right{
+			position:absolute;
+			top:0;
+			right:0;
+			width:500px;
+			height:1500px;
+			background: red;
+		}
+	</style>
+	<script>
+		window.onscroll=function(){
+			var right=document.getElementsByClassName("right");
+			var scroll=getScroll();
+			var screen=window.screen.availHeight;
+			var rightHeight=right[0].offsetHeight;
+			console.log(scroll);
+			if(scroll+screen>=rightHeight){
+				right[0].style.position="fixed";
+				right[0].style.right=0+"px";
+				right[0].style.top=screen-rightHeight+"px";
+			}
+	}
+	function getScroll(){
+		var yscroll;
+		if(self.pageYOffset){
+			yscroll=self.pageYOffset;
+		}else if(document.documentElement&&document.documentElement.scrollTop){
+			yscroll=documentElement.scrollTop;
+		}else if(document.body){
+			yscroll=document.body.scrollTop;
+		}
+		return yscroll;
+	}
+	</script>
+</head>
+<body>
+	<div class="left"></div>
+	<div class="right"></div>
+</body>
+</html>

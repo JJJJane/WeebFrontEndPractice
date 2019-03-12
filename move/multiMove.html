@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>多物体移动</title>
+	<style>
+		li{
+			background: red;
+			width: 200px;
+			height: 100px;
+			margin-bottom: 10px;
+		}
+	</style>
+	<script>
+		window.onload=function(){
+			var list=document.getElementsByTagName("li");
+			for(var i= 0;i<list.length;i++){
+				list[i].timer=null;
+				list[i].onmouseover=function(){
+
+					startMove(this,400);
+				}
+				list[i].onmouseout=function(){
+					startMove(this,200);
+				}
+			}
+		}	
+		function startMove(obj, target){
+			clearInterval(obj.timer);
+			obj.timer=setInterval(function(){
+			var speed=(target-obj.offsetWidth)/10;
+			speed=speed>0?Math.ceil(speed):Math.floor(speed);
+			if(obj.offsetWidth==target){
+				clearInterval(obj.timer);
+			}else{
+				obj.style.width=obj.offsetWidth+speed+'px';
+			}
+		},10);
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<li></li>
+		<li></li>
+		<li></li>
+	</div>
+</body>
+</html>

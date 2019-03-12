@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>淘宝动画效果</title>
+	<script src="/Users/taohuadao/Documents/WebProjects/move.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script>
+		window.onload=function(){
+			var move=document.getElementById('move');
+			var alist=move.getElementsByTagName('a')
+			for(var i=0;i<alist.length;i++){
+				alist[i].onmouseover=function(){
+					var _this=this.getElementsByTagName('i')[0];
+					startMove(_this,{top:-25,opacity:0},function(){
+						_this.style.top=30+'px';
+						startMove(_this,{top:5,opacity:100});
+					});
+				}
+			}
+		}
+	</script>
+	<style>
+	#move{
+		margin:0 auto;
+		width:20%;
+		border : 2px solid #ddd;
+		border-radius: 10px;
+		background-color: #ccc;
+	}
+		#move a{
+			display: inline-block;
+			width : 60px;
+			height: 30px;
+			border: 1px solid #111;
+			border-radius: 3px;
+			background-color: #fff;
+			text-align: center;
+			margin : 10px 12px;
+			position :relative;
+			padding-top:40px;
+			color:#000;
+			font-size: 12px;
+			text-decoration: none;
+		}
+		#move img{
+			width:40px;
+			height:40px;
+		}
+		#move a:hover{
+			color:red;
+		}
+		#move a i{
+			position:absolute;
+			top:5px;
+			left:0;
+			display: inline-block;
+			width:100%;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div id='move'>
+		<a href='#'><i><img src='/Users/taohuadao/Documents/WebProjects/tempimgs/彩票.png'></i><p>彩票</p></a>
+		<a href='#'><i><img src='/Users/taohuadao/Documents/WebProjects/tempimgs/电影.png'></i><p>电影</p></a>
+		<a href='#'><i><img src='/Users/taohuadao/Documents/WebProjects/tempimgs/音乐.png'></i><p>音乐</p></a>
+		<a href='#'><i><img src='/Users/taohuadao/Documents/WebProjects/tempimgs/自助缴费.png'></i><p>缴费</p></a>
+		<a href='#'><i><img src='/Users/taohuadao/Documents/WebProjects/tempimgs/理财.png'></i><p>理财</p></a>
+		<a href='#'><i><img src='/Users/taohuadao/Documents/WebProjects/tempimgs/外卖.png'></i><p>外卖</p></a>
+	</div>
+</body>
+</html>

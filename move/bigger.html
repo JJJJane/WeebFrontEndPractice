@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>放大镜</title>
+	<style>
+		#div1{
+			position: relative;
+			width:700px;
+			height:400px;
+			border:2px solid grey;
+		}
+		#choose{
+			display: none;
+			position: absolute;
+			left:32px;
+			top:10px;
+			width:160px;
+			height: 160px;
+			background: red;
+			opacity: 0.5;
+			z-index: 10;
+		}
+		#img1{
+			margin:10px 32px;
+		}
+		#div2{
+			display: none;
+			width:320px;
+			height: 320px;
+			border: 1px solid grey;
+			position: absolute;
+			left:800px;
+			top:10px;
+			overflow: hidden;
+		}
+		#img2{
+
+			position: absolute;
+		}
+	</style>
+	<script>
+		window.onload=function(){
+			var choose=document.getElementById("choose");
+			var img2=document.getElementById("img2");
+			var div2=document.getElementById("div2");
+			var div1=document.getElementById("div1");
+			div1.onmouseover=function(){
+				choose.style.display="block";
+				div2.style.display="block";
+			}
+			div1.onmouseout=function(){
+				choose.style.display="none";
+				div2.style.display="none";
+			}
+			div1.onmousemove=function(ev){
+				var event=ev;
+				var left=event.clientX-div1.offsetLeft-img1.offsetLeft-choose.offsetWidth/2;
+				var top=event.clientY-div1.offsetTop-img1.offsetTop-choose.offsetHeight/2;
+				img2.style.left=-2*left+"px";
+				img2.style.top=-2*top+"px";
+				choose.style.left=left+img1.offsetLeft+"px";
+				choose.style.top=top+"px";
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="div1">
+		<img src="/Users/taohuadao/Documents/WebProjects/tempimgs/Thelma.jpg" id="img1"/>
+		<div id="choose"></div>
+	</div>
+	<div id="div2">
+		<img src="/Users/taohuadao/Documents/WebProjects/tempimgs/Thelma1.jpg" id="img2"/>
+	</div>
+</body>
+</html>

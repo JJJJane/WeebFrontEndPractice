@@ -1,0 +1,128 @@
+.mainarea{
+	width:1000px;
+	height:730px;
+	margin:0 auto; 
+}
+.left{
+	display:inline-block;
+	float:left;
+	width:56px;
+	height:20px;
+	margin:15px 10px 10px 20px;
+	font-size:14px;
+	color: #555;
+}
+.right{
+	display:inline-block;
+	float: left;
+	width:56px;
+	height:20px;
+	margin:18px 0px 10px 0px;
+	font-size:12px;
+	color:#ccc;
+}
+.connection{
+	width:200px;
+	height:498px;
+	background: #f8faff;
+    border-left: 1px solid #eee;
+ 	float:left;   
+}
+.address{
+	font-size:12px;
+	color:#777;
+	height:100px;
+	line-height:25px;
+	margin: 0px 0px 0px 20px;
+}
+.contact{
+	margin: 10px 0px auto 0px;
+}
+.contactphra{
+	font-size:12px;
+	color:#777;
+	line-height:30px;
+	margin: 0px 0px 0px 20px;
+}
+.consultl{
+	margin: 0px 10px 0px 20px;
+	display: inline-block;
+}
+.mainright{
+	width:797px;
+	height:auto;
+	position:relative;
+	float:left;
+	border-right: 1px solid #eee;
+	border-left: 1px solid #eee;	
+
+}
+.introduction{
+	display: block;
+}
+.introphra{
+	width:750px;
+	margin: 0px 20px 10px 20px;
+	height:auto;
+	font-size:12px;
+	line-height:22px;
+	text-overflow: ellipsis;
+	color: #777;
+}
+.advantages{
+	display:block;
+}
+.advanphra{
+	width:600px;
+	height:auto;
+	margin: 0px 0px 40px 20px;
+	font-size:12px;
+	color:#777;
+	line-height:22px;
+	text-overflow: ellipsis;
+}
+.introductionPic{
+	width:500px;
+	height:300px;
+	display:block;
+	position:absolute;
+	bottom:0;
+	right:0;
+	z-index:-50;
+}
+.successcompany{
+	width:1000px;
+	height:185px;
+	float: left;
+	border-right: 1px solid #eee;
+	border-left: 1px solid #eee;	
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;	
+}
+.success{
+	height:45px;
+	width:1000px;
+}
+.companies{
+	float:left;
+	width:960px;
+	height:130px;
+	overflow:hidden;
+	margin:0 20px 0px 20px;
+}
+.companytable{
+	width:1000px;
+	height:130px;
+}
+.company{
+	width:110px;
+	height:110px;
+	padding:0 10px 0 10px;
+}
+.companyPic{
+	display:block;
+	width:100px;
+	height:100px;
+	padding:5px;
+	border:1px solid #eee;
+}

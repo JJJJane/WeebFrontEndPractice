@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>注册信息</title>
+</head>
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<script>
+    function button1(){
+	var p1=document.getElementById("choose1");
+	var p2=document.getElementById("choose2");
+	var p3=document.getElementById("choose3");
+	var p4=document.getElementById("choose4");
+	p1.style.display="none";
+	p2.style.display="block";
+	p3.style.display="none";
+	p4.style.display="block";
+	var x=$("div").attr("grade");
+	var y=document.getElementById("background");
+	x.style.display="none";
+	y.style.display="none";
+	}
+	function button2(){
+	var p1=document.getElementById("choose1");
+	var p2=document.getElementById("choose2");
+	var p3=document.getElementById("choose3");
+	var p4=document.getElementById("choose4");
+	p2.style.display="none";
+	p1.style.display="block";
+	p4.style.display="none";
+	p3.style.display="block";
+	
+	}
+	function button3(){
+	var p5=document.getElementById("choose5");
+	var p6=document.getElementById("choose6");
+	var p7=document.getElementById("choose7");
+	var p8=document.getElementById("choose8");
+	p5.style.display="none";
+	p6.style.display="block";
+	p7.style.display="none";
+	p8.style.display="block";
+	}
+	function button4(){
+	var p1=document.getElementById("choose5");
+	var p2=document.getElementById("choose6");
+	var p3=document.getElementById("choose7");
+	var p4=document.getElementById("choose8");
+	p2.style.display="none";
+	p1.style.display="block";
+	p4.style.display="none";
+	p3.style.display="block";
+	}
+	function arrowx11(y){
+		var x=document.getElementById("arrows1");
+		x.style.display="block";
+		y.style.display="none";
+		}
+	function arrows11(y){
+		var x=document.getElementById("arrowx1");
+		x.style.display="block";
+		y.style.display="none";
+		}
+	function arrowx22(y){
+		var x=document.getElementById("arrows2");
+		x.style.display="block";
+		y.style.display="none";
+		}
+	function arrows22(y){
+		var x=document.getElementById("arrowx2");
+		x.style.display="block";
+		y.style.display="none";
+		}
+	function arrowx33(y){
+		var x=document.getElementById("arrows3");
+		x.style.display="block";
+		y.style.display="none";
+		}
+	function arrows33(y){
+		var x=document.getElementById("arrowx3");
+		x.style.display="block";
+		y.style.display="none";
+		}
+		function arrowx44(y){
+		var x=document.getElementById("arrows4");
+		x.style.display="block";
+		y.style.display="none";
+		}
+	function arrows44(y){
+		var x=document.getElementById("arrowx4");
+		x.style.display="block";
+		y.style.display="none";
+		}
+    </script>
+<style>
+/*固定开头*/
+html,body,.myclass,.myForm{height:100%;}
+ * {
+  margin: 0;
+  padding: 0; }
+body {
+  font: 3.6vw/1.5 tahoma,arial,sans-serif; }
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table; }
+.clearfix:after {
+  clear: both; }
+/*不展示列表*/
+  .li1,.li2,.li3,.li4{display:none;}
+/*整个块*/
+  .myClass{width:100%;height:100%;position:relative;}
+/*下一步*/
+  #next{width:100%;height:13vw;bottom:0vw;text-align:center;padding-top:5vw
+  ;background:#FEF866;position:fixed;font-size:120%;color:#FFF;}
+/*黑色字体*/
+  .a{display:inline-block;margin-left:3vw;padding-top:3vw;font-size:140%;}
+/*箭头 向下*/
+.school img,.background img,.grade img,.college img{height:4vw;float:right;margin-right:-30vw;margin-top:4vw;}
+/*灰色选项字体设置*/
+#chooseSchool,#chooseCollege,#chooseBackground,#chooseGrade{float:right;margin-right:9vw;margin-top:3.5vw;font-size:4vw; color:#AAA;}
+/*边框设置*/
+.name,.iden,.school,.college,.background,.grade,.gender{border-bottom:0.2vw solid #DDD;height:15vw;}
+/*灰色文字框设置*/
+.text1{border:none;width:50%;height:97%;margin-right:3.2vw; float:right;font-size:100%;color:#AAA;text-align: right; display:inline-block;}
+/*四个选项文字位置设置*/
+#student{margin-right:15vw;display:inline-block;padding-top:3vw;}
+#staff{margin-right:2.5vw;display:inline-block;padding-top:3vw;}
+#boy{margin-right:9vw;display:inline-block;padding-top:3vw;}
+#girl{margin-right:2.5vw;display:inline-block;padding-top:3vw;}
+/*四个选择类*/
+.choice{float:right;font-size:120%;height:100%;}
+/*四个按钮类*/
+.choice1,.choice2,.choice3,.choice4{height:100%;display:inline-block;position:relative;}
+/*八个按钮上下位置设置*/
+#choose1,#choose2,#choose5,#choose6,#choose3,#choose4,#choose7,#choose8{height:30%;position:absolute;top:25%;}
+/*八个按钮左右位置设置*/
+#choose1,#choose2{left:-25%;}
+#choose3,#choose4{left:-43%;}
+#choose5,#choose6{left:-38%;}
+#choose7,#choose8{left:-55%;}
+}
+
+</style>
+<body>
+
+<div class="myClass">
+
+<form action="#" method="post" name="myForm" class="myForm">
+<div class="iden">
+<label class="a">我的身份：</label>
+<div class="choice">
+<div class="choice1" onclick="button2()">
+<img src="../Desktop/Unnamed Site 2/choose-2.png" id="choose1">
+<img src="../Desktop/Unnamed Site 2/choose-3.png" id="choose2" style="display:none">
+<span id="student">在校生</span>
+</div>
+<div class="choice2"  onclick="button1()">
+<img src="../Desktop/Unnamed Site 2/choose-3.png" id="choose3">
+<img src="../Desktop/Unnamed Site 2/choose-2.png" id="choose4" style="display:none">
+<span id="staff">教职工</span>
+</div>
+</div>
+</div>
+<div class="school">
+<label class="a">学校：</label>
+<span id="chooseSchool">选择你的大学</span>
+<img src="../Desktop/Unnamed Site 2/箭头 下.png" onclick="arrowx11(this)" id="arrowx1">
+<img src="../Desktop/Unnamed Site 2/箭头 上.png" style="display:none" onclick="arrows11(this)" id="arrows1">
+<ul class="li1">
+<li>华工</li>
+<li>中大</li>
+<li>清华</li>
+<li>北大</li>
+</ul>
+</div>
+
+<div class="college">
+<label class="a">学院：</label>
+<span id="chooseCollege">选择你的学院</span>
+<img src="../Desktop/Unnamed Site 2/箭头 下.png" onclick="arrowx22(this)" id="arrowx2">
+<img src="../Desktop/Unnamed Site 2/箭头 上.png" style="display:none" onclick="arrows22(this)" id="arrows2">
+<ul class="li2">
+<li>软件学院</li>
+<li>经贸学院</li>
+<li>工商学院</li>
+</ul>
+</div>
+<div class="name">
+<label class="a">姓名：</label><input type="text" value="输入与证件一致的名字" name="Name" class="text1"/>
+</div>
+<div class="gender">
+<label class="a">性别：</label>
+<div class="choice">
+<div class="choice3" onclick="button4()">
+<img src="../Desktop/Unnamed Site 2/choose-2.png" id="choose5">
+<img src="../Desktop/Unnamed Site 2/choose-3.png" id="choose6" style="display:none">
+<span id="boy">男生</span>
+</div>
+<div class="choice4" onclick="button3()">
+<img src="../Desktop/Unnamed Site 2/choose-3.png" id="choose7">
+<img src="../Desktop/Unnamed Site 2/choose-2.png" id="choose8" style="display:none">
+<span id="girl">女生</span>
+</div>
+</div>
+</div>
+
+<div class="background">
+<label class="a">学历：</label>
+<span id="chooseBackground">选择你的学历</span>
+<img src="../Desktop/Unnamed Site 2/箭头 下.png" onclick="arrowx33(this)" id="arrowx3">
+<img src="../Desktop/Unnamed Site 2/箭头 上.png" style="display:none" onclick="arrows33(this)" id="arrows3">
+<ul class="li3">
+<li>本科</li>
+<li>硕士</li>
+<li>博士</li>
+</ul>
+</div>
+<div class="grade">
+<label class="a">年级：</label>
+<span id="chooseGrade">选择你的年级</span>
+<img src="../Desktop/Unnamed Site 2/箭头 下.png" onclick="arrowx44(this)" id="arrowx4">
+<img src="../Desktop/Unnamed Site 2/箭头 上.png" style="display:none" onclick="arrows44(this)" id="arrows4">
+<ul class="li4">
+<li>2016</li>
+<li>2017</li>
+<li>2018</li>
+</ul>
+</div>
+
+</form>
+</div>
+<div id="next">下一步</div>
+</body>
+</html>

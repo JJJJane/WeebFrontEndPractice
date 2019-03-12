@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>多物体透明度改变</title>
+	<style>
+	li{
+		background: red;
+		width:200px;
+		height:100px;
+		margin-bottom: 10px;
+		filter: alpha(opacity:30);
+		opacity: 0.3;
+	}
+	</style>
+	<script>
+		window.onload=function(){
+			var list = document.getElementsByTagName("li");
+			for(var i= 0;i<list.length;i++){
+				list[i].timer=null;
+				list[i].opt = 30;
+				list[i].onmouseover=function(){
+					startMove(this,100);
+				}
+				list[i].onmouseout=function(){
+					startMove(this,30);
+				}
+			}
+		}
+		function startMove(obj,target){
+			clearInterval(obj.timer);
+			obj.timer=setInterval(function(){
+				var speed=(target-obj.opt)/10;
+				speed=speed>0?Math.ceil(speed):Math.floor(speed);
+				if(obj.opt==target){
+					clearInterval(obj.timer);
+				}else{
+					obj.opt+=speed;
+					obj.style.filter='alpha(opacity:'+obj.opt/100+')';
+					obj.style.opacity = obj.opt/100;
+				}
+			},10);
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<li></li>
+		<li></li>
+		<li></li>
+	</div>
+</body>
+</html>

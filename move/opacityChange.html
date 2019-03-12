@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>改变图片透明度</title>
+	<style>
+	*{
+		margin:0;
+	}
+	#div1{
+		width: 200px;
+		height: 200px;
+		background: red;
+		filter: alpha(opacity:30);
+		opacity: 0.3;
+	}
+	</style>
+	<script>
+		window.onload = function(){
+			var getDiv=document.getElementById("div1");
+			getDiv.onmouseover=function(){
+				startMove(100);
+			}
+			getDiv.onmouseout=function(){
+				startMove(30);
+			}
+		}
+		var timer = null;
+		var opt=30;
+		function startMove(target){
+			var getDiv=document.getElementById("div1");
+			clearInterval(timer);
+			var speed=0;
+			if(opt<target){
+				speed=10;
+			}else{
+				speed=-10;
+			}
+			timer = setInterval(function(){
+				if(opt==target){
+					clearInterval(timer);
+				}else{
+					opt+=speed;
+					getDiv.style.filter='alpha(opacity:'+opt/100+')';
+					getDiv.style.opacity=opt/100;
+				}
+			},30);
+		}
+	</script>
+</head>
+
+<body>
+	<div id="div1">
+	</div>
+</body>
+</html>

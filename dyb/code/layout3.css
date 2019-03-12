@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+	}
+	body{
+		margin:1em 10em;
+		background-image:url(dybimages/backgroundOfBody.jpg);
+		background-attachment:fixed;//?
+		background-position:top left;//?
+		background-repeat:repeat-x;//?
+		max-width:80em;
+		}
+		#header{
+			background-image:url(dybimages/backgroundOfHeader.jpg);
+			background-repeat:no-repeat;
+			background-position:bottom right;
+			border-width:0.1em;
+			border-style:bold;
+			bordr-bottom-width:0;
+			}
+			#navigation{
+				background-image:url(dybimages/backgroundOfNavigation.jpg);
+				background-position: bottom left;
+				background-repeat:repeat-x;
+				border-width:0.1em;
+				border-style:solid;
+				border-bottom-width:0;
+				border-top-width:0;
+				padding-left:10%;
+				}
+				#navigation ul{
+					width:100%;
+					overflow:hidden;
+					border-left-width:0.1em;
+					border-left-style:solid;
+					}
+					#navigation li{
+						display:inline;
+						}
+						#navigation a{
+							display:block;
+							float:left;
+							padding:0.5em 2em;
+							border-right:0.1em solid;
+							}
+							#content{
+								border-width:0.1em;
+								border-style:solid;
+								border-top-width:0;
+								padding:2em 10%;
+								line-height:1.8em;
+								}
+								#about #header{
+									background-image:url(dybimages/backgroundOfHeader1.jpg);
+									}
+										#activities #header{
+									        background-image:url(dybimages/backgroundOfHeader2.jpg);
+									        }
+											#photos #header{
+												background-image:url(dybimages/backgroundOfHeader3.jpg)
+												}
+												#feedback #header{
+													background-image:url(dybimages/backgroundOfHeader4.jpg)
+													}
+													#content #imagegallery ul{
+														width:100%;
+														overflow:hidden;
+														}
+														#content #imagegallery li{
+															display:inline;
+															}
+												
+

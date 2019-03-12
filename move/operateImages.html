@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图片放大缩小效果</title>
+<script>
+	window.onload = function(){
+		var maxBtn = document.getElementById("max");
+		var minBtn = document.getElementById("min");
+		maxBtn.onclick = function(){
+			maxFun();
+		}
+		minBtn.onclick = function(){
+			minFun();
+		}
+		var img = document.getElementById("myImage");
+		var maxWidth = img.width*2;
+		var minWidth = img.width/2;
+		function maxFun(){
+			var endWidth = img.width*1.3;
+			var maxTimer = setInterval(function(){
+				if(img.width<endWidth){
+					if (img.width<maxWidth){
+						img.width = img.width*1.05;
+						img.height = img.height*1.05;
+					}else{
+						alert("已放大到最大");
+						clearInterval(maxTimer);
+					}
+				}else{
+					clearInterval(maxTimer);
+				}
+			},20);
+		}
+		function minFun(){
+			var endHeight = img.height*0.7;
+			var minTimer = setInterval(function(){
+				if(img.height>endHeight){
+					if(img.width>minWidth){
+						img.width = img.width*0.95;
+						img.height = img.height*0.95;
+					}else{
+					alert("已缩小到最小");
+					clearInterval(minTimer);
+				}
+				}else{
+					clearInterval(minTimer);
+				}
+			},20);
+		}
+	}
+</script>
+</head>
+<body>
+	<div style="width:700px;margin:0 auto">
+		<img src="/Users/taohuadao/Documents/WebProjects/tempimgs/Thelma.jpg" id="myImage" />
+		<br />
+	</div>
+	<div style="width:700px;margin :0 auto">
+		<input type="button" id = "max" value = "放大" />
+		<input type="button" id = "min" value = "缩小" />
+	</div>
+</body>
+</html>

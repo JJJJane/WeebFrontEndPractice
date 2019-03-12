@@ -1,0 +1,58 @@
+.black{
+	color:black;
+}
+.textblack{
+	font-size:12px;
+}
+.textmid{
+	text-align: center;
+	font-size:14px;
+	color:gray;
+}
+table{
+	  border-collapse:collapse;
+
+}
+table, th, td { border: 2px solid gray; }
+
+.indutable{
+	font-size: 14px;
+	color: gray;
+}
+.tableh{
+	font-weight: 700;
+}
+
+.staytop{
+	vertical-align: top;
+}
+.staymid{
+	text-align: center;
+}
+.stayleft{
+	text-align: left;
+}
+.w36{
+	width: 36px;
+}
+.w132{
+	width: 132px;
+}
+.w288{
+	width: 288px;
+}
+.w192{
+	width: 192px;
+}
+.w60{
+	width: 60px;
+}
+.w354{
+	width: 354px;
+}
+.w156{
+	width: 156px;
+}
+.w126{
+	width: 126px;
+}

@@ -1,0 +1,240 @@
+.mainarea{
+	width:1000px;
+	height:620px;
+	margin: 0 auto;
+}
+
+.left{
+	display:inline-block;
+	float:left;
+	width:56px;
+	height:20px;
+	margin:15px 10px 10px 20px;
+	font-size:14px;
+	color: #555;
+}
+.right{
+	display:inline-block;
+	float: left;
+	width:56px;
+	height:auto;
+	margin:18px 0px 10px 0px;
+	font-size:12px;
+	color:#ccc;
+}
+/*news*/
+.news{
+	width:200px;
+	height:420px;
+	float:left;
+	background: #f8faff;
+	border-left: 1px solid #eee;
+	overflow:hidden;
+}
+
+.title{
+	height:40px;
+	margin:10px auto;
+}
+
+.newslist{
+	list-style: none;
+	display:block;
+	border:none;
+	height:420px;
+}
+
+.newsul{
+	overflow:hidden;
+	float: left;
+	width:180px;
+	height:360px;
+	margin-top:-20px;
+	margin-left:20px;
+	overflow:scroll;
+}
+
+.newsTitle{
+	display: block;
+    width:149px;
+    padding:10px 0 10px 0;
+    border-bottom: 1px dotted #ccc;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color:#777;
+	text-decoration: none;
+    font-size:12px;
+}
+/*中间部分*/
+.middle{
+	width:600px;
+	height:420px;
+	float:left;
+}
+/*中间上半部分*/
+.introduction{
+	width:600px;
+	height:170px;
+	position:relative;
+}
+.introductionPic{
+	width:600px;
+	height:170px;
+	display:block;
+	position:absolute;
+    bottom:0;
+	z-index:-100;
+}
+
+.tointro{
+	cursor: pointer;
+	text-decoration:none;
+	border:0;
+	outline:0;
+}
+.introphra{
+	width:400px;
+	margin: 0px 20px 10px 20px;
+	height:110px;
+	font-size:12px;
+	line-height:22px;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	color: #777;
+}
+/*中间下半部分*/
+.business{
+	width:600px;
+	height:250px;
+	position:relative;
+}
+.businessPic{
+	width:600px;
+	height:250px;
+	display:block;
+	position:absolute;
+	bottom:0;
+	z-index:-50;
+}
+.busihead{
+	font-size:14px;
+	color: #555;
+}
+.shangbiao{
+	position:absolute;
+	width:100px;
+	height:230px;
+	margin:40px 20px 10px 300px;
+	list-style: none;
+
+}
+.zhuanli{
+	position:absolute;
+	width:100px;
+	height:230px;
+	margin:40px 20px 10px 400px;
+	list-style: none;
+}
+.banquan{
+	position:absolute;
+	width:100px;
+	height:230px;
+	margin:40px 20px 10px 500px;
+	list-style: none;
+}
+
+.tobusi{
+	font-size:12px;
+	color: #777;
+}
+
+/*右边部分*/
+.rightarea{
+	width:198px;
+	height:420px;
+	float:left;
+	border-right: 1px solid #eee;
+}
+/*右边上半部分*/
+.advantages{
+	width:199px;
+	height:170px;
+}
+.toadvan{
+	cursor: pointer;
+	text-decoration:none;
+	border:0;
+	outline:0;
+}
+.toadvanphra{
+	width:160px;
+	height:110px;
+	margin: 0px 0px 0px 20px;
+	font-size:12px;
+	color:#777;
+	line-height:22px;
+	overflow:hidden;
+	text-overflow: ellipsis;
+}
+/*右边下半部分*/
+.connection{
+	width:199px;
+	height:250px;
+	background: #f8faff;
+    border-left: 1px solid #eee;
+}
+.address{
+	font-size:12px;
+	color:#777;
+	height:100px;
+	line-height:25px;
+	margin: 0px 0px 0px 20px;
+}
+.contactphra{
+	font-size:12px;
+	color:#777;
+	line-height:30px;
+	margin: 0px 0px 0px 20px;
+}
+.consultl{
+	margin: 0px 0px 0px 20px;
+	display: inline-block;
+}
+.successcompany{
+	width:1000px;
+	height:169px;
+	float: left;
+}
+.success{
+	height:45px;
+	width:1000px;
+}
+.companies{
+	float:left;
+	width:960px;
+	height:124px;
+	overflow:hidden;
+	margin:0 20px 0 20px;
+}
+.companytable{
+	width:1000px;
+	height:130px;
+}
+.company{
+	width:110px;
+	height:110px;
+	padding:0 10px 0 10px;
+}
+.companyPic{
+	display:block;
+	width:100px;
+	height:100px;
+	padding:5px;
+	border:1px solid #eee;
+}
+
+
+
+
+
